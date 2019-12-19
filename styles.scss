@@ -14,10 +14,13 @@ body {
   height: $diameter;
   background-color: rgba(255, 255, 255, .8);
   border-radius: 50%;
+  border: 3px solid black;
   position: relative;
 
   .number {
     position: absolute;
+    font-size: 24px;
+    font-weight: bold;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -31,5 +34,17 @@ body {
     $rotation: $rotation + 30deg;
   }
 
-  
+  .hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 10px;
+    height: 35%;
+    background-color: black;
+    //border: 1px solid white;
+    //border-radius: 10px 10px 0 0;
+    transform-origin: bottom;
+    transform: translateX(-50%);
+
+  }
 }
